@@ -2,4 +2,5 @@
     <string name="app_name">MVVM App with Kotlin</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="login">LOGIN</string>
 </resources>

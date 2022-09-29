@@ -8,11 +8,7 @@ import com.example.mvvmappwithkotlin.Interface.LoginResultCallBacks
 import com.example.mvvmappwithkotlin.Model.User
 
 class LoginViewModel(private val listener: LoginResultCallBacks) : ViewModel() {
-    private val user: User
-
-    init {
-        this.user = User("", "")
-    }
+    private val user: User = User("", "")
 
     //Create function to set email after user finish enter text
     val emailTextWatcher: TextWatcher
@@ -51,7 +47,7 @@ class LoginViewModel(private val listener: LoginResultCallBacks) : ViewModel() {
 
     //create function to process login button when clicked
 
-    fun onLoginClicked(v:View){
+    fun onLoginClicked(v: View) {
         if (user.isDataValid)
             listener.onSuccess("Login Success")
         else
