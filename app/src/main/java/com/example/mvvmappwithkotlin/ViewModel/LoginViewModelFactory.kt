@@ -9,4 +9,8 @@ class LoginViewModelFactory(private val listener:LoginResultCallBacks):
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return LoginViewModel(listener) as T
     }
+
+    fun get(java: Class<LoginViewModel>): LoginViewModel? {
+        TODO("Not yet implemented")
+    }
 }
